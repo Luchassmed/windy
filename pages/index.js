@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
+import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import Avatar from "../public/avatar.png";
-
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import Projects from "../components/Projects";
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
               <li>
                 <BsMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl animate-bounce dark:text-white"
+                  className="transition ease-in-out delay-150 cursor-pointer text-2xl animate-bounce dark:text-white"
                 />
               </li>
               <li>

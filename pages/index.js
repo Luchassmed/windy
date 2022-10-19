@@ -1,10 +1,9 @@
 import Head from "next/head";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
-import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import Avatar from "../public/avatar.png";
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import Projects from "../components/Projects";
 
 export default function Home() {

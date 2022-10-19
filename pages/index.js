@@ -27,7 +27,7 @@ export default function Home() {
               <li>
                 <BsMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="transition ease-in-out delay-150 cursor-pointer text-2xl animate-bounce dark:text-white"
+                  className="transition ease-in-out delay-200 cursor-pointer text-2xl animate-bounce dark:text-white"
                 />
               </li>
               <li>
@@ -62,19 +62,19 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 dark:text-white">
             <a
-              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 duration-300"
               href="https://www.linkedin.com/in/luchas-schmidt/"
             >
               <AiFillLinkedin />
             </a>
             <a
-              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 duration-300"
               href="https://github.com/Luchassmed"
             >
               <AiFillGithub />
             </a>
             <a
-              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 duration-300"
               href="mailto: kapot@live.dk"
             >
               <AiFillMail />

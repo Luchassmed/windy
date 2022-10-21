@@ -4,8 +4,8 @@ import Image from "next/image";
 import Avatar from "../public/avatar.png";
 import { useState } from "react";
 import Projects from "../components/Projects";
-import "keen-slider/keen-slider.min.css";
 import Socials from "../components/Socials";
+import "keen-slider/keen-slider.min.css";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);

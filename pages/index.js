@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { BsMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
 import Avatar from "../public/avatar.png";
 import { useState } from "react";
 import Projects from "../components/Projects";
 import "keen-slider/keen-slider.min.css";
+import Socials from "../components/Socials";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -61,26 +61,7 @@ export default function Home() {
               <span className="text-teal-500"> DaxMedia</span>.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 dark:text-white">
-            <a
-              className="transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 duration-300"
-              href="https://www.linkedin.com/in/luchas-schmidt/" target="_blank"
-            >
-              <AiFillLinkedin />
-            </a>
-            <a
-              className="transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 duration-300"
-              href="https://github.com/Luchassmed" target="_blank"
-            >
-              <AiFillGithub />
-            </a>
-            <a
-              className="transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 duration-300"
-              href="mailto: kapot@live.dk" target="_blank"
-            >
-              <AiFillMail />
-            </a>
-          </div>
+          <Socials />
           <div className="relative mx-auto rounded-full w-80 h-80 mt-20 md:h-96 md:w-96">
             <Image src={Avatar} layout="fill" objectFit="cover" />
           </div>

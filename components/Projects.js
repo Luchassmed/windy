@@ -1,12 +1,24 @@
 import React from "react";
 import Hashtag from "../public/code.png";
 import Image from "next/image";
+
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+
 export default function Projects() {
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+    mode: "free",
+    slides: {
+      perView: 3,
+      spacing: 50,
+    },
+  });
   return (
     <>
       <div>
         <section>
-          <div>
+          <div className="pb-10">
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-600 dark:text-white">
               Most of the projects I have done have been in connection with
@@ -16,23 +28,27 @@ export default function Projects() {
             </p>
           </div>
 
-          <div className="text-3xl flex justify-center gap-16 py-3 dark:text-white">
+          <div
+            ref={sliderRef}
+            className="keen-slider text-center pb-10 dark:text-white"
+          >
             <a
-              href="https://github.com/Luchassmed"
+              href="https://github.com/Luchassmed/windy"
               target="_blank"
-              className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
+              className="keen-slider__slide number-slide1 shadow-lg rounded-xl pb-5 hover:scale-110"
             >
               <Image src={Hashtag} width={100} height={100} />
 
-              <h3 className="texl-lg font-medium pt-2 pb-8">
-                ReactJS webapplication
-              </h3>
-              <p>Det her</p>
+              <h3 className="texl-lg font-medium pt-2 pb-8">Next.js web app</h3>
+              <p>
+                This portfolio website made with Next.js and styled with
+                Tailwind CSS
+              </p>
             </a>
             <a
               href="https://github.com/Luchassmed/react-api"
               target="_blank"
-              className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
+              className="keen-slider__slide number-slide2 shadow-lg rounded-xl pb-5"
             >
               <Image src={Hashtag} width={100} height={100} />
               <h3 className="texl-lg font-medium pt-2 pb-8">ReactJS API</h3>
@@ -41,7 +57,7 @@ export default function Projects() {
             <a
               href="https://github.com/Luchassmed"
               target="_blank"
-              className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
+              className="keen-slider__slide number-slide3 shadow-lg rounded-xl pb-5"
             >
               <Image src={Hashtag} width={100} height={100} />
               <h3 className="texl-lg font-medium pt-2 pb-8">

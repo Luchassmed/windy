@@ -23,8 +23,9 @@ export default function Projects() {
             <p className="text-md py-2 leading-8 text-gray-600 dark:text-white">
               Most of the projects I have done have been in connection with
               exams and assignments during my schooling at{" "}
-              <span className="text-teal-500">Roskilde Universitet</span>. The
-              portfolio will be updated continuously...
+              <span className="text-teal-500">Roskilde Universitet</span>.
+              <br />
+              The portfolio will be updated continuously...
             </p>
           </div>
 

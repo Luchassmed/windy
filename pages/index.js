@@ -6,6 +6,7 @@ import { useState } from "react";
 import Projects from "../components/Projects";
 import Socials from "../components/Socials";
 import "keen-slider/keen-slider.min.css";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,26 +43,44 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-              Hello, I'm Luchas Schmidt
-            </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              I'm a B.Sc. student and a web developer. Based in
-              <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-red-600">
-                {" "}
-                Copenhagen
-              </span>
-            </h3>
-            <p className="py-5 text-gray-800 leading-8 md:text-xl dark:text-white">
-              Computer Science and Informatics student at
-              <span className="text-teal-500"> Roskilde Universitet</span>.
-            </p>
-            <p className="py-1 text-gray-800 leading-8 md:text-xl dark:text-white">
-              Junior Development Specialist at
-              <span className="text-teal-500"> DaxMedia</span>.
-            </p>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { scale: 0.8, opacity: 0 },
+                visible: { scale: 1, opacity: 1, transition: { delay: 0.4 } },
+              }}
+            >
+              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+                Hello, I'm Luchas Schmidt
+              </h2>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { scale: 0.8, opacity: 0 },
+                visible: { scale: 1, opacity: 1, transition: { delay: 0.8 } },
+              }}
+            >
+              <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+                I'm a B.Sc. student and a web developer. Based in
+                <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-red-600">
+                  {" "}
+                  Copenhagen
+                </span>
+              </h3>
+              <p className="py-5 text-gray-800 leading-8 md:text-xl dark:text-white">
+                Computer Science and Informatics student at
+                <span className="text-teal-500"> Roskilde Universitet</span>.
+              </p>
+              <p className="py-1 text-gray-800 leading-8 md:text-xl dark:text-white">
+                Junior Development Specialist at
+                <span className="text-teal-500"> DaxMedia</span>.
+              </p>
+              <Socials />
+            </motion.div>
           </div>
-          <Socials />
           <div className="relative mx-auto rounded-full w-80 h-80 mt-20 md:h-96 md:w-96">
             <Image src={Avatar} layout="fill" objectFit="cover" />
           </div>

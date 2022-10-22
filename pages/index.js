@@ -26,7 +26,7 @@ export default function Home() {
             animate="visible"
             variants={{
               hidden: { scale: 0.8, opacity: 0 },
-              visible: { scale: 1, opacity: 1, transition: { delay: 0.8 } },
+              visible: { scale: 1, opacity: 1, transition: { delay: 1 } },
             }}
           >
             <nav className="py-10 mb-12 flex justify-between">
@@ -69,7 +69,7 @@ export default function Home() {
               animate="visible"
               variants={{
                 hidden: { scale: 0.8, opacity: 0 },
-                visible: { scale: 1, opacity: 1, transition: { delay: 0.8 } },
+                visible: { scale: 1, opacity: 1, transition: { delay: 1 } },
               }}
             >
               <h3 className="text-2xl py-2 md:text-3xl dark:text-white">

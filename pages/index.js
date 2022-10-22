@@ -21,27 +21,36 @@ export default function Home() {
 
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-roboto dark:text-white">
-              Luchas Schmidt
-            </h1>
-            <ul className="flex items-center">
-              <li>
-                <BsMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="transition ease-in-out delay-200 cursor-pointer text-2xl animate-bounce dark:text-white"
-                />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
-                >
-                  ???
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { scale: 0.8, opacity: 0 },
+              visible: { scale: 1, opacity: 1, transition: { delay: 0.8 } },
+            }}
+          >
+            <nav className="py-10 mb-12 flex justify-between">
+              <h1 className="text-xl font-roboto dark:text-white">
+                Luchas Schmidt
+              </h1>
+              <ul className="flex items-center">
+                <li>
+                  <BsMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="transition ease-in-out delay-200 cursor-pointer text-2xl animate-bounce dark:text-white"
+                  />
+                </li>
+                <li>
+                  <a
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    href="#"
+                  >
+                    ???
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </motion.div>
           <div className="text-center p-10">
             <motion.div
               initial="hidden"
@@ -65,7 +74,7 @@ export default function Home() {
             >
               <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
                 I'm a B.Sc. student and a web developer. Based in
-                <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-red-600">
+                <span className="md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-red-600">
                   {" "}
                   Copenhagen
                 </span>

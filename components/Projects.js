@@ -1,7 +1,6 @@
 import React from "react";
 import Hashtag from "../public/code.png";
 import Image from "next/image";
-
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
@@ -56,13 +55,24 @@ export default function Projects() {
               <p>A todo-list made with ReactJS</p>
             </a>
             <a
-              href="https://github.com/Luchassmed"
+              href="https://github.com/Luchassmed/cs-course/tree/master/EC21"
               target="_blank"
               className="keen-slider__slide number-slide3 shadow-lg rounded-xl pb-5"
             >
               <Image src={Hashtag} width={100} height={100} />
               <h3 className="texl-lg font-medium pt-2 pb-8">
-                Tilebased game in Java
+                Tile-based game made with Java
+              </h3>
+              <p>CS-course project for exam</p>
+            </a>
+            <a
+              href="https://github.com/Luchassmed/cs-course/tree/master/WITS22"
+              target="_blank"
+              className="keen-slider__slide number-slide4 shadow-lg rounded-xl pb-5"
+            >
+              <Image src={Hashtag} width={100} height={100} />
+              <h3 className="texl-lg font-medium pt-2 pb-8">
+                Web based blogserver made with PHP, HTML and API
               </h3>
               <p>CS-course project for exam</p>
             </a>

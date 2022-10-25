@@ -72,7 +72,8 @@ export default function Projects() {
             >
               <Image src={Hashtag} width={100} height={100} />
               <h3 className="texl-lg font-medium pt-2 pb-8">
-                Web based blogserver made with PHP, HTML and API
+                Web based blogserver made with
+                <br /> PHP, HTML and API
               </h3>
               <p>CS-course project for exam</p>
             </a>

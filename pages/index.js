@@ -51,7 +51,7 @@ export default function Home() {
               </ul>
             </nav>
           </motion.div>
-          <div className="text-center p-10">
+          <div className="text-center md:p-10">
             <motion.div
               initial="hidden"
               animate="visible"

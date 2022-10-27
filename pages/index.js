@@ -60,8 +60,11 @@ export default function Home() {
                 visible: { scale: 1, opacity: 1, transition: { delay: 0.4 } },
               }}
             >
-              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+              <h2 className="hidden md:block py-2 text-teal-600 font-medium text-6xl">
                 Hello, I'm Luchas Schmidt
+              </h2>
+              <h2 className="block md:hidden py-2 text-teal-600 font-medium text-3xl">
+                Hello, I'm <br /> Luchas Schmidt
               </h2>
             </motion.div>
             <motion.div
@@ -90,7 +93,7 @@ export default function Home() {
               <Socials />
             </motion.div>
           </div>
-          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 md:h-96 md:w-96">
+          <div className="relative mx-auto rounded-full w-80 h-80 md:mt-20 md:h-96 md:w-96">
             <Image src={Avatar} layout="fill" objectFit="cover" />
           </div>
         </section>

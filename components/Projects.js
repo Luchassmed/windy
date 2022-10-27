@@ -13,6 +13,15 @@ export default function Projects() {
       spacing: 50,
     },
   });
+
+  const [sliderRefRespons] = useKeenSlider({
+    loop: true,
+    mode: "free",
+    slides: {
+      perView: 1.2,
+      spacing: 50,
+    },
+  });
   return (
     <>
       <div>
@@ -28,55 +37,114 @@ export default function Projects() {
             </p>
           </div>
 
-          <div
-            ref={sliderRef}
-            className="keen-slider text-center pb-10 dark:text-white"
-          >
-            <a
-              href="https://github.com/Luchassmed/windy"
-              target="_blank"
-              className="keen-slider__slide number-slide1 shadow-lg rounded-xl pb-5 hover:scale-110"
+          <div className="hidden md:block">
+            <div
+              ref={sliderRef}
+              className="keen-slider text-center pb-10 dark:text-white"
             >
-              <Image src={Hashtag} width={100} height={100} />
+              <a
+                href="https://github.com/Luchassmed/windy"
+                target="_blank"
+                className="keen-slider__slide number-slide1 shadow-lg rounded-xl pb-5 hover:scale-110"
+              >
+                <Image src={Hashtag} width={100} height={100} />
 
-              <h3 className="texl-lg font-medium pt-2 pb-8">Next.js web app</h3>
-              <p>
-                This portfolio website made with Next.js and styled with
-                Tailwind CSS
-              </p>
-            </a>
-            <a
-              href="https://github.com/Luchassmed/react-api"
-              target="_blank"
-              className="keen-slider__slide number-slide2 shadow-lg rounded-xl pb-5"
+                <h3 className="texl-lg font-medium pt-2 pb-8">
+                  Next.js web app
+                </h3>
+                <p>
+                  This portfolio website made with Next.js and styled with
+                  Tailwind CSS
+                </p>
+              </a>
+              <a
+                href="https://github.com/Luchassmed/react-api"
+                target="_blank"
+                className="keen-slider__slide number-slide2 shadow-lg rounded-xl pb-5"
+              >
+                <Image src={Hashtag} width={100} height={100} />
+                <h3 className="texl-lg font-medium pt-2 pb-8">ReactJS API</h3>
+                <p>A todo-list made with ReactJS</p>
+              </a>
+              <a
+                href="https://github.com/Luchassmed/cs-course/tree/master/EC21"
+                target="_blank"
+                className="keen-slider__slide number-slide3 shadow-lg rounded-xl pb-5"
+              >
+                <Image src={Hashtag} width={100} height={100} />
+                <h3 className="texl-lg font-medium pt-2 pb-8">
+                  Tile-based game made with Java
+                </h3>
+                <p>CS-course project for exam</p>
+              </a>
+              <a
+                href="https://github.com/Luchassmed/cs-course/tree/master/WITS22"
+                target="_blank"
+                className="keen-slider__slide number-slide4 shadow-lg rounded-xl pb-5"
+              >
+                <Image src={Hashtag} width={100} height={100} />
+                <h3 className="texl-lg font-medium pt-2 pb-8">
+                  Web based blogserver made with
+                  <br /> PHP, HTML and API
+                </h3>
+                <p>CS-course project for exam</p>
+              </a>
+            </div>
+          </div>
+
+          <div className="block md:hidden">
+            <div
+              ref={sliderRefRespons}
+              className="keen-slider text-center pb-10 dark:text-white"
             >
-              <Image src={Hashtag} width={100} height={100} />
-              <h3 className="texl-lg font-medium pt-2 pb-8">ReactJS API</h3>
-              <p>A todo-list made with ReactJS</p>
-            </a>
-            <a
-              href="https://github.com/Luchassmed/cs-course/tree/master/EC21"
-              target="_blank"
-              className="keen-slider__slide number-slide3 shadow-lg rounded-xl pb-5"
-            >
-              <Image src={Hashtag} width={100} height={100} />
-              <h3 className="texl-lg font-medium pt-2 pb-8">
-                Tile-based game made with Java
-              </h3>
-              <p>CS-course project for exam</p>
-            </a>
-            <a
-              href="https://github.com/Luchassmed/cs-course/tree/master/WITS22"
-              target="_blank"
-              className="keen-slider__slide number-slide4 shadow-lg rounded-xl pb-5"
-            >
-              <Image src={Hashtag} width={100} height={100} />
-              <h3 className="texl-lg font-medium pt-2 pb-8">
-                Web based blogserver made with
-                <br /> PHP, HTML and API
-              </h3>
-              <p>CS-course project for exam</p>
-            </a>
+              <a
+                href="https://github.com/Luchassmed/windy"
+                target="_blank"
+                className="keen-slider__slide number-slide1 shadow-lg rounded-xl pb-5 hover:scale-110"
+              >
+                <Image src={Hashtag} width={100} height={100} />
+
+                <h3 className="texl-lg font-medium pt-2 pb-8">
+                  Next.js web app
+                </h3>
+                <p>
+                  This portfolio website made with Next.js and styled with
+                  Tailwind CSS
+                </p>
+              </a>
+              <a
+                href="https://github.com/Luchassmed/react-api"
+                target="_blank"
+                className="keen-slider__slide number-slide2 shadow-lg rounded-xl pb-5"
+              >
+                <Image src={Hashtag} width={100} height={100} />
+                <h3 className="texl-lg font-medium pt-2 pb-8">ReactJS API</h3>
+                <p>A todo-list made with ReactJS</p>
+              </a>
+              <a
+                href="https://github.com/Luchassmed/cs-course/tree/master/EC21"
+                target="_blank"
+                className="keen-slider__slide number-slide3 shadow-lg rounded-xl pb-5"
+              >
+                <Image src={Hashtag} width={100} height={100} />
+                <h3 className="texl-lg font-medium pt-2 pb-8">
+                  Tile-based game made with Java
+                </h3>
+                <p>CS-course project for exam</p>
+              </a>
+              <a
+                href="https://github.com/Luchassmed/cs-course/tree/master/WITS22"
+                target="_blank"
+                className="keen-slider__slide number-slide4 shadow-lg rounded-xl pb-5"
+              >
+                <Image src={Hashtag} width={100} height={100} />
+                <h3 className="texl-lg font-medium pt-2 pb-8">
+                  Web based blogserver made with
+                  <br /> PHP, HTML and API
+                </h3>
+                <p>CS-course project for exam</p>
+              </a>
+            </div>
           </div>
         </section>
       </div>

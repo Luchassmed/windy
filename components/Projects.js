@@ -39,7 +39,7 @@ export default function Projects() {
             </div>
             <div className="xl:pl-16  xl:flex gap-3 hidden">
               <div
-                className="rounded-lg border-2 border-gray-300 bg-white  hover:bg-gray-50 cursor-pointer flex justify-center items-center w-12 h-12 duration-150 hover:border-gray-100  text-center"
+                className="dark:bg-gray-900 dark:border-teal-500 rounded-lg border-2 border-gray-300 bg-white  hover:bg-gray-50 cursor-pointer flex justify-center items-center w-12 h-12 duration-150 hover:border-gray-100  text-center"
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.prev()
                 }
@@ -50,7 +50,7 @@ export default function Projects() {
                 />
               </div>
               <div
-                className="rounded-lg border-2 border-gray-300 bg-white hover:bg-gray-50 cursor-pointer flex justify-center items-center w-12 h-12 duration-150 hover:border-gray-100  text-center"
+                className="dark:bg-gray-900 dark:border-teal-500 rounded-lg border-2 border-gray-300 bg-white hover:bg-gray-50 cursor-pointer flex justify-center items-center w-12 h-12 duration-150 hover:border-gray-100  text-center"
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.next()
                 }

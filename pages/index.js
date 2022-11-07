@@ -93,9 +93,6 @@ export default function Home() {
               <Socials />
             </motion.div>
           </div>
-          <div className="relative mx-auto rounded-full w-80 h-80 md:mt-20 md:h-96 md:w-96">
-            <Image src={Avatar} layout="fill" objectFit="cover" />
-          </div>
         </section>
 
         <Projects />

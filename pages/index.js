@@ -93,6 +93,18 @@ export default function Home() {
               <Socials />
             </motion.div>
           </div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { scale: 0.8, opacity: 0 },
+              visible: { scale: 1, opacity: 1, transition: { delay: 1 } },
+            }}
+          >
+            <div className="relative mx-auto rounded-full w-80 h-80 md:mt-20 md:h-96 md:w-96">
+              <Image src={Avatar} layout="fill" objectFit="cover" />
+            </div>
+          </motion.div>
         </section>
 
         <Projects />
